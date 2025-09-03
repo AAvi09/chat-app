@@ -1,3 +1,5 @@
+import express from "express";
+
 export const signup = (req, res) => {
   res.json({ message: "signup route" });
 };
