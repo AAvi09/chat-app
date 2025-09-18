@@ -7,6 +7,7 @@ export const getUsersForSidebar = async (req, res) => {
 
     res.status(200).json({ users: filteredUsers });
   } catch (error) {
+    console.error("Error fetching users for sidebar:", error);
     res.status(500).json({ message: "Server Error" });
   }
 };
