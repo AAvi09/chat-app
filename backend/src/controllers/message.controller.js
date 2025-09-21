@@ -12,3 +12,11 @@ export const getUsersForSidebar = async (req, res) => {
     res.status(500).json({ message: "Server Error" });
   }
 };
+
+export const getMessages = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const loggedInUserId = req.user._id;    }catch (error) {
+    console.error("Error fetching messages:", error);
+    res.status(500).json({ message: "Server Error" });
+  }
