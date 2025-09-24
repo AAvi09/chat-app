@@ -16,7 +16,7 @@ export const getUsersForSidebar = async (req, res) => {
 export const getMessages = async (req, res) => {
   try {
     const { id: userToChatId } = req.params;
-    const loggedInUserId = req.user._id;
+    const senderId = req.user._id;
   } catch (error) {
     console.error("Error fetching messages:", error);
     res.status(500).json({ message: "Server Error" });
