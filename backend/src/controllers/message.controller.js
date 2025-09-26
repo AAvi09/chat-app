@@ -20,7 +20,15 @@ export const getMessages = async (req, res) => {
   try {
     const { id: userToChatId } = req.params;
     const senderId = req.user._id;
-    const messages = await Message;
+    const messages = await Message.find({
+      $or: [
+        {
+          senderId: senderId,
+          receiverId: userToChatId,
+        },
+        { senderId: userToChatId, receiverId: senderId },
+      ],
+    });
   } catch (error) {
     console.error("Error fetching messages:", error);
     res.status(500).json({ message: "Server Error" });
