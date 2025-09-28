@@ -30,7 +30,7 @@ export const getMessages = async (req, res) => {
       ],
     });
   } catch (error) {
-    console.error("Error fetching messages:", error);
+    console.error("Error  messages:", error);
     res.status(500).json({ message: "Server Error" });
   }
 };
