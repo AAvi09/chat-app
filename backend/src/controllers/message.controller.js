@@ -36,3 +36,10 @@ export const getMessages = async (req, res) => {
     res.status(500).json({ message: "Server Error" });
   }
 };
+
+export const sendMessage = async (req, res) => {
+  try {
+    const { text, image } = req.body;
+    const { id: receiverId } = req.params;
+  } catch (error) {}
+};
