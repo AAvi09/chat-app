@@ -3,4 +3,5 @@ import { axiosInstance } from "../lib/axios";
 
 export const useStoreAuth = create((set) => ({
   authUser: null,
+  isCheckingAuth: true,
 }));
