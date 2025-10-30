@@ -8,8 +8,6 @@ export const useStoreAuth = create((set) => ({
   isLoggingIn: false,
   isUpdatingProfile: false,
 
-  isCheckingAuth: true,
-
   checkAuth: async () => {
     set({ isCheckingAuth: true });
     try {
