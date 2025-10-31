@@ -13,6 +13,8 @@ export const useStoreAuth = create((set) => ({
     try {
       const res = await axiosInstance.get("/auth/check");
       set({ authUser: res.data });
-    } catch (error) {}
+    } catch (error) {
+      set({ authUser: null });
+    }
   },
 }));
