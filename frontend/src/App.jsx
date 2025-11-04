@@ -6,14 +6,16 @@ import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
-import { useAuthStore } from "./store/useStoreAuth";
+import { useStoreAuth } from "./store/useStoreAuth";
 
 const App = () => {
-  const { authUser, checkAuth } = useAuthStore();
+  const { authUser, checkAuth } = useStoreAuth();
 
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
+
+  console.log("Authenticated User:", authUser);
   return (
     <div>
       <Navbar />
