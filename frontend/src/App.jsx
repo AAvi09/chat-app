@@ -9,13 +9,19 @@ import ProfilePage from "./pages/ProfilePage";
 import { useStoreAuth } from "./store/useStoreAuth";
 
 const App = () => {
-  const { authUser, checkAuth } = useStoreAuth();
+  const { authUser, checkAuth, isCheckingAuth } = useStoreAuth();
 
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
 
   console.log("Authenticated User:", authUser);
+
+  if (isCheckingAuth && !authUser) return {
+    <div className = "flex items-center justify-center min-h-screen">
+    <Loader className = "size-10 animate-spin"/>
+    </div>
+  };
   return (
     <div>
       <Navbar />
