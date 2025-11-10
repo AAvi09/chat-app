@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 import { useStoreAuth } from "./store/useStoreAuth";
+import { Loader } from "lucide-react";
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth } = useStoreAuth();
