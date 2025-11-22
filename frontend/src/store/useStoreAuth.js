@@ -19,4 +19,5 @@ export const useStoreAuth = create((set) => ({
       set({ isCheckingAuth: false });
     }
   },
+  signUp: async (data) => {},
 }));
