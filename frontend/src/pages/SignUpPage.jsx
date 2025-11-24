@@ -7,6 +7,10 @@ const SignUpPage = () => {
     email: "",
     password: "",
   });
+  const [signUp, isSigningUp] = useStoreAuth((state) => [
+    state.signUp,
+    state.isSigningUp,
+  ]);
   return <div>SignUpPage</div>;
 };
 
