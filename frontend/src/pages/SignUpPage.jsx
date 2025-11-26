@@ -11,6 +11,11 @@ const SignUpPage = () => {
     state.signUp,
     state.isSigningUp,
   ]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    signUp(formData);
+  };
   return <div>SignUpPage</div>;
 };
 
