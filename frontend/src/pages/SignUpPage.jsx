@@ -32,6 +32,7 @@ const SignUpPage = () => {
               </p>
             </div>
           </div>
+          <form onSubmit={handleSubmit} className="space-y-6"></form>
         </div>
       </div>
     </div>
