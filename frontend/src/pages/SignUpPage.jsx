@@ -32,7 +32,9 @@ const SignUpPage = () => {
               </p>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="space-y-6"></form>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="absolute inset-y-0 left-0 pl-3 flex  items-center pointer-events-none"></div>
+          </form>
         </div>
       </div>
     </div>
