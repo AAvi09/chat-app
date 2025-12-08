@@ -33,7 +33,9 @@ const SignUpPage = () => {
             </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="absolute inset-y-0 left-0 pl-3 flex  items-center pointer-events-none"></div>
+            <div className="absolute inset-y-0 left-0 pl-3 flex  items-center pointer-events-none">
+              <User className="size-5 text-base-content/40" />
+            </div>
           </form>
         </div>
       </div>
