@@ -45,6 +45,7 @@ const SignUpPage = () => {
                   type="text"
                   className={`input input-bordered w-full pl-10`}
                   placeholder="john doe"
+                  value={formData.fullName}
                 />
               </div>
             </div>
