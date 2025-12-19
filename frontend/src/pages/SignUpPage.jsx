@@ -52,6 +52,7 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
+            <div className="form-control"></div>
           </form>
         </div>
       </div>
