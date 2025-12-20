@@ -52,7 +52,9 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
-            <div className="form-control"></div>
+            <div className="form-control">
+              <label className="label"></label>
+            </div>
           </form>
         </div>
       </div>
