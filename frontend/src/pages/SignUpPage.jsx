@@ -53,7 +53,9 @@ const SignUpPage = () => {
               </div>
             </div>
             <div className="form-control">
-              <label className="label"></label>
+              <label className="label">
+                <span>Password</span>
+              </label>
             </div>
           </form>
         </div>
